@@ -1,0 +1,177 @@
+.tournament-layout {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.tournament-list-wrapper {
+  flex: 1;
+  background: linear-gradient(to bottom right, #e6f4ea, #d0f0e0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #00796b;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #004d40;
+}
+
+.tournament-list-title {
+  font-size: 2.4rem;
+  color: #004d40;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tournament-error {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.tournament-empty {
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.tournament-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 700px;
+}
+
+.tournament-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: transform 0.2s ease;
+}
+
+.tournament-item:hover {
+  transform: translateY(-4px);
+}
+
+.tournament-item strong {
+  font-size: 1.2rem;
+  color: #00796b;
+}
+
+.tournament-item em {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #444;
+}
+
+.tournament-item small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tournament-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tournament-actions button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tournament-actions button:hover {
+  background-color: #005f56;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #00796b;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.modal-buttons button:hover {
+  background-color: #005f56;
+}
+
+.modal-buttons .danger {
+  background-color: #d32f2f;
+}
+
+.modal-buttons .danger:hover {
+  background-color: #b71c1c;
+}

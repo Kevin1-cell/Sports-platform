@@ -1,0 +1,77 @@
+.tournament-wrapper {
+  background-color: #f0fdf4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+}
+
+.tournament-title {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 2rem;
+}
+
+.tournament-form {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tournament-form input,
+.tournament-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.tournament-button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tournament-button:hover {
+  background-color: #005f56;
+}
+
+.tournament-message {
+  margin-top: 1rem;
+  color: #00796b;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #00796b;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #005f56;
+}

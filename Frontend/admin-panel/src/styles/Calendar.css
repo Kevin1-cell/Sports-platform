@@ -1,0 +1,83 @@
+.calendar-layout {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.calendar-wrapper {
+  flex: 1;
+  background: linear-gradient(to bottom right, #e6f4ea, #d0f0e0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #00796b;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #004d40;
+}
+
+.calendar-title {
+  font-size: 2.4rem;
+  color: #004d40;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calendar-error {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.calendar-loading {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.calendar-events {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.calendar-event {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: transform 0.2s ease;
+}
+
+.calendar-event:hover {
+  transform: translateY(-4px);
+}
+
+.calendar-event strong {
+  font-size: 1.2rem;
+  color: #00796b;
+}
